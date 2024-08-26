@@ -27,7 +27,7 @@ function generateDivs(numberOfDivs, container) {
         let div = document.createElement("div");
         div.setAttribute("id", j);
         div.setAttribute("class", 'box');
-        div.setAttribute("draggable", 'false');
+        div.setAttribute("draggable", 'false'); 
         div.onmouseover = () => {
             if (isClicking)
                 div.style.backgroundColor = getColor();
