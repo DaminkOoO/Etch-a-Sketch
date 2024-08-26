@@ -9,10 +9,15 @@
 
 </head>
 
-<body>
-    <div id="functionalities">
+<body onload="render()">
+    <div id="functions">
         <h1>Etch a sketch</h1>
         <input type="color" id="colorInput" value="#7A1CAC">
+        <div class="sliderGroup">
+            <span class="sliderValue">8 x 8</span>
+            <input oninput="render()" type="range" min="2" max="64" value="8" step="2" class="slider" id="myRange">
+        </div>
+        <button id="reset" onclick="resetGrid()">Reset container</button>
     </div>
     <div class="container">
     </div>
