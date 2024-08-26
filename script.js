@@ -27,7 +27,8 @@ function generateDivs(numberOfDivs, container) {
         let div = document.createElement("div");
         div.setAttribute("id", j);
         div.setAttribute("class", 'box');
-        div.setAttribute("draggable", 'false'); 
+        div.setAttribute("draggable", 'false');
+        div.style.backgroundColor = '#FFF5EA'
         div.onmouseover = () => {
             if (isClicking)
                 div.style.backgroundColor = getColor();
@@ -46,7 +47,7 @@ function resetGrid(container) {
     console.log("rest");
     const boxes = document.querySelectorAll('.box');
     boxes.forEach(box => {
-        box.style.backgroundColor = 'white';
+        box.style.backgroundColor = '#FFF5EA';
     });
 }
 
